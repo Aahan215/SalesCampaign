@@ -1,0 +1,13 @@
+org\saleCampaign\entity\Product.class
+org\saleCampaign\SaleCampaignApplication.class
+org\saleCampaign\repository\ProductPriceHistoryRepository.class
+org\saleCampaign\repository\ProductRepository.class
+org\saleCampaign\service\CampaignService.class
+org\saleCampaign\controller\ProductController.class
+org\saleCampaign\controller\CampaignController.class
+org\saleCampaign\entity\CampaignDiscount.class
+org\saleCampaign\repository\CampaignRepository.class
+org\saleCampaign\service\ProductPriceHistoryService.class
+org\saleCampaign\entity\ProductPriceHistory.class
+org\saleCampaign\entity\Campaign.class
+org\saleCampaign\service\ProductService.class
