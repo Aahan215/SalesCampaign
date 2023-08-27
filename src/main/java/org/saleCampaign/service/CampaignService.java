@@ -4,6 +4,7 @@ import org.saleCampaign.dao.CampaignDao;
 import org.saleCampaign.dao.CampaignDiscountDao;
 import org.saleCampaign.dao.ProductDao;
 import org.saleCampaign.dto.CampaignDto;
+import org.saleCampaign.pojo.CampaignDiscountPojo;
 import org.saleCampaign.pojo.CampaignPojo;
 import org.saleCampaign.pojo.ProductPojo;
 import org.saleCampaign.repository.CampaignRepository;
@@ -27,6 +28,11 @@ public class CampaignService {
     @Transactional(rollbackOn = ApiException.class)
     public void add(CampaignPojo pojo) throws ApiException {
         dao.insert(pojo);
+    }
+
+    @Transactional(rollbackOn = ApiException.class)
+    public void addDiscount(CampaignDiscountPojo pojo) throws ApiException {
+        campaignDiscountDao.insert(pojo);
     }
 
     @Transactional

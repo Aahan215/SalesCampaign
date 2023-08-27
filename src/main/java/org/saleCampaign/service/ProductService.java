@@ -2,6 +2,7 @@ package org.saleCampaign.service;
 
 import org.saleCampaign.dao.ProductDao;
 import org.saleCampaign.pojo.ProductPojo;
+import org.saleCampaign.pojo.ProductPriceHistoryPojo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,11 +15,16 @@ public class ProductService {
     @Autowired
     private ProductDao dao;
 
+
     @Transactional(rollbackOn = ApiException.class)
     public void add(ProductPojo pojo) throws ApiException {
         dao.insert(pojo);
     }
 
+    @Transactional(rollbackOn = ApiException.class)
+    public void add(ProductPriceHistoryPojo pojo) throws ApiException {
+        dao.insert(pojo);
+    }
     @Transactional
     public ProductPojo get(String id) throws ApiException{
         return dao.select(id);

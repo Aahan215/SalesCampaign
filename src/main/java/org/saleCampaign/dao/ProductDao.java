@@ -1,6 +1,7 @@
 package org.saleCampaign.dao;
 
 import org.saleCampaign.pojo.ProductPojo;
+import org.saleCampaign.pojo.ProductPriceHistoryPojo;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -18,6 +19,11 @@ public class ProductDao extends AbstractDao {
     private EntityManager em;
     @Transactional
     public void insert(ProductPojo p) {
+        em.persist(p);
+    }
+
+    @Transactional
+    public void insert(ProductPriceHistoryPojo p) {
         em.persist(p);
     }
 

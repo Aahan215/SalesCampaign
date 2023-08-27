@@ -1,4 +1,5 @@
 org/saleCampaign/repository/CampaignRepository.class
+org/saleCampaign/SaleCampaignApplication.class
 org/saleCampaign/service/ProductPriceHistoryService.class
 org/saleCampaign/dao/CampaignDiscountDao.class
 org/saleCampaign/pojo/CampaignPojo.class
